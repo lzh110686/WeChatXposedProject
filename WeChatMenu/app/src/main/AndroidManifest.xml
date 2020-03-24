@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wechatmenu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true"/>
+        <!--模块名字-->
+        <meta-data
+            android:name="xposeddescription"
+            android:value="给微信添加一个menu"/>
+        <!--xposed最低版本
+            比如你的xposed api是de.robv.android.xposed:api:82，就填82-->
+        <meta-data
+            android:name="xposedminversion"
+            android:value="82"/>
+    </application>
+
+</manifest>
